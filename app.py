@@ -4,6 +4,7 @@ import numpy as np
 import os 
 import pickle
 from eda_app import run_eda_app
+from ml_app import run_ml_app
 
 def main() :
     st.title('자동차 가격 예측')
@@ -21,7 +22,7 @@ def main() :
         # run_eda_app을 적으면 알아서 import문을 만들어준다. 난 내가적었는데 ...
         run_eda_app()
     elif choice == 'ML' :
-        pass
+        run_ml_app()
 
 if __name__ == '__main__' :
     main() 
